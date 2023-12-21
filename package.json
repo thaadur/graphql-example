@@ -30,7 +30,7 @@
     "express-graphql": "^0.6.1",
     "graphql": "^0.8.2",
     "mongodb": "^2.2.11",
-    "rawmodel": "^1.2.0"
+    "rawmodel": "^1.33.0"
   },
   "devDependencies": {
     "ava": "^0.17.0"
