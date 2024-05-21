@@ -2,6 +2,25 @@
 # yarn lockfile v1
 
 
+"@types/lodash.isequal@^4.5.3":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@types/lodash.isequal/-/lodash.isequal-4.5.8.tgz#b30bb6ff6a5f6c19b3daf389d649ac7f7a250499"
+  integrity sha512-uput6pg4E/tj2LGxCZo9+y27JNyB2OZuuI/T5F+ylVDYuqICLG2/ktjxx0v6GvVntAf8TvEzeQLcV0ffRirXuA==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash.merge@^4.6.4":
+  version "4.6.9"
+  resolved "https://registry.yarnpkg.com/@types/lodash.merge/-/lodash.merge-4.6.9.tgz#93e94796997ed9a3ebe9ccf071ccaec4c6bc8fb8"
+  integrity sha512-23sHDPmzd59kUgWyKGiOMO2Qb9YtqRO/x4IhkgNUiPQ1+5MUVqi6bCZeq9nBJ17msjIMbEIO5u+XW4Kz6aGUhQ==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.4.tgz#0303b64958ee070059e3a7184048a55159fe20b7"
+  integrity sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==
+
 abbrev@1:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
@@ -1534,11 +1553,12 @@ graphql@^0.8.2:
   dependencies:
     iterall "1.0.2"
 
-handleable@^0.19.0:
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/handleable/-/handleable-0.19.2.tgz#7afc8703492826a0920ab29c9a7d5e47fb284a26"
+handleable@^0.25.1:
+  version "0.25.1"
+  resolved "https://registry.yarnpkg.com/handleable/-/handleable-0.25.1.tgz#2254c4b0dfe7718402a1d2345a97f8dbebb418db"
+  integrity sha512-bSfBrGgZPThIfCdM0mN2285Co5ZqD5DrYirWZPjQfB+Flk9hwvsJ+v842F45PfCPuSzLE//Tbj5jVJi40V6FJg==
   dependencies:
-    lodash.merge "4.6.0"
+    lodash.merge "^4.6.1"
 
 har-validator@~2.0.6:
   version "2.0.6"
@@ -1913,9 +1933,15 @@ lodash.isequal@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.4.0.tgz#6295768e98e14dc15ce8d362ef6340db82852031"
 
-lodash.merge@4.6.0, lodash.merge@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+
+lodash.merge@^4.6.1:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
 lodash@^4.2.0:
   version "4.17.2"
@@ -2435,15 +2461,18 @@ raw-body@^2.1.0:
     iconv-lite "0.4.13"
     unpipe "1.0.0"
 
-rawmodel@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/rawmodel/-/rawmodel-1.2.0.tgz#5b13be052e9e441d86241bf246b42d38ce9005e0"
+rawmodel@^1.33.0:
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/rawmodel/-/rawmodel-1.33.0.tgz#1680e0b6763e0b08fdb498b417f0b5d6e6c5f126"
+  integrity sha512-U60PyCZwf640KGs+mJGoqOjWddsN3uRSpVSxxxE2+0GL6rThHC3F3qVMof/0VxGmVt0XRKaTpO5ee+H7Y8iILA==
   dependencies:
-    handleable "^0.19.0"
-    lodash.isequal "^4.4.0"
-    lodash.merge "^4.6.0"
-    typeable "^2.0.0"
-    validatable "^0.24.0"
+    "@types/lodash.isequal" "^4.5.3"
+    "@types/lodash.merge" "^4.6.4"
+    handleable "^0.25.1"
+    lodash.isequal "^4.5.0"
+    lodash.merge "^4.6.1"
+    typeable "^2.4.1"
+    validatable "^0.34.2"
 
 rc@^1.0.1, rc@^1.1.6, rc@~1.1.6:
   version "1.1.6"
@@ -2905,9 +2934,10 @@ type-name@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/type-name/-/type-name-2.0.2.tgz#efe7d4123d8ac52afff7f40c7e4dec5266008fb4"
 
-typeable@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/typeable/-/typeable-2.0.1.tgz#725ea716d37ba0472cb967c0c66c48b3249f88eb"
+typeable@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/typeable/-/typeable-2.4.1.tgz#152da3f5818a853ef29c4ac66d13d4670fa4beb1"
+  integrity sha512-NPIeowjymPLSzpK1ySPknaatOdrbxGGzaXSEyY+Iq79eJH3i6OyxCOHhVsASoDQp5CB5zfd8u1PWMSvBIAQNFA==
 
 uid-number@~0.0.6:
   version "0.0.6"
@@ -2968,12 +2998,13 @@ uuid@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.0.tgz#6728fc0459c450d796a99c31837569bdf672d728"
 
-validatable@^0.24.0:
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/validatable/-/validatable-0.24.1.tgz#9b71c46b5fb633e8235cf5ea6bb69070d1fdd14e"
+validatable@^0.34.2:
+  version "0.34.2"
+  resolved "https://registry.yarnpkg.com/validatable/-/validatable-0.34.2.tgz#026149b62e25ef016a666075f237d7fcbc89766b"
+  integrity sha512-AFPs3qL3E3uhJvBqzFB1+FwzZOzcubIopPkZyCK/t80DKx7bFsscalq9jDu7iF4XEuPANWBhDnF2wxyQ6Bf8fg==
   dependencies:
-    lodash.merge "^4.6.0"
-    typeable "^2.0.0"
+    lodash.merge "^4.6.1"
+    typeable "^2.4.1"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
